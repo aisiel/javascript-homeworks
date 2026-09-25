@@ -40,14 +40,3 @@ function applyDiscount(price, discount) {
 console.log(applyDiscount(1000, 15));
 console.log(applyDiscount(500));
 console.log(applyDiscount(555, 80));
-
-
-function greet(name) {
-  function capitalize(str){
-   return str[0].toUpperCase() + str.slice(1).toLowerCase();
-  }
-  return `Привіт, ${capitalize(name)}!`;
-}
-console.log(greet("оЛЕГ"));
-console.log(greet("айСєль"));
-console.log(capitalize("oLeh")); // помилка, бо ця функція не в області видимості

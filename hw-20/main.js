@@ -85,18 +85,7 @@ console.log(defUpperStr());
 // console.log(evenFn(15)) // [2, 4, 6, 8, 10, 12, 14]
 // console.log(evenFn(20)) // [2, 4, 6, 8, 10, 12, 14, 16, 18, 20]
 
-function evenFn(n) {
-  let result = [];
-  for (let i = 1; i <= n; i++) {
-    if (i % 2 === 0) {
-      result.push(i);
-    }
-  }
-  return result;
-}
-console.log(evenFn(10));
-console.log(evenFn(15));
-console.log(evenFn(20));
+
 
 /*
  * #5
@@ -238,3 +227,4 @@ console.log(evenFn(20));
 // console.log(mainFunc(2, 5, cbPow)) // 32
 // console.log(mainFunc(2, 5, cbAdd)) // 7
 // console.log(mainFunc(2, 5, 'not a func')) // false
+
