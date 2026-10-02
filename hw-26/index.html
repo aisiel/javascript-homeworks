@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .todo-list li {
+        cursor: pointer;
+      }
+      .todo-list li[data-done="true"] {
+        text-decoration: line-through;
+        opacity: 0.6;
+      }
+      .todo-list li button {
+        margin-left: 8px;
+      }
+    </style>
+    <script src="./main.js" defer></script>
+  </head>
+  <body>
+    <form class="todo-form">
+      <input class="todo-input" type="text" placeholder="Що зробити?" />
+      <button type="submit">Додати</button>
+    </form>
+    <ul class="todo-list"></ul>
+  </body>
+</html>

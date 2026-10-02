@@ -13,7 +13,7 @@ const createProductCard = (id, title, category, price, discount, inStock, rating
         <p>Категорія: ${category}</p>
         <p>Ціна: ${price}</p>
         <p>Знижка: ${discount}</p>
-        <p>У наявності: ${inStock}</p>
+        <p>У наявності: ${inStock ? "так" : "ні"}</p>
         <p>Рейтинг: ${rating}</p>
         <img src="${image}" alt="">
         <p>Теги: ${tags}</p>
