@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .dot {
+        display: block;
+        width: 10px;
+        height: 10px;
+        border-radius: 50%;
+        background-color: black;
+        opacity: 0.5;
+      }
+      .dots {
+        display: flex;
+        gap: 20px;
+        list-style: none;
+      }
+      .dots li{
+        width: 10px;
+        height: 10px;
+      }
+      .active .dot{
+        opacity: 1;
+        
+      }
+    </style>
+   
+  </head>
+  <body>
+    <main>
+      <img id="slide" width="400" height="300 " />
+      <ul class="dots" id="dots"></ul>
+      <div>
+        <button id="prev-btn">Назад</button>
+        <button id="next-btn">Вперед</button>
+      </div>
+       <script src="./main.js"></script>
+    </main>
+  </body>
+</html>
