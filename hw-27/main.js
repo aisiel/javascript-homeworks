@@ -9,6 +9,7 @@ const image = document.querySelector("#slide");
 const prevBtn = document.querySelector("#prev-btn");
 const nextBtn = document.querySelector("#next-btn");
 const dots = document.querySelector("#dots");
+
 let currentIndex = 0;
 
 image.setAttribute("src", pics[currentIndex]);
@@ -35,22 +36,17 @@ const handleNextBtnClick = () => {
 nextBtn.addEventListener("click", handleNextBtnClick);
 
 dots.addEventListener("click", (event) => {
-   currentIndex = event.target.id;
-    image.setAttribute("src", pics[currentIndex]);
-    dots.innerHTML = "";
-    createDots();
+  currentIndex = event.target.id;
+  image.setAttribute("src", pics[currentIndex]);
+  dots.innerHTML = "";
+  createDots();
 });
 const createDots = () => {
   for (let i = 0; i < pics.length; i++) {
     const dot = document.createElement("li");
-    dot.id = i;
-  
+    dot.classList.add("dot-item");
 
-    // dot.addEventListener("click", ()=>{
-    //   currentIndex = i;
-    //   image.setAttribute("src", pics[currentIndex]);
-    // //   dot.classList.toggle("active");
-    // })
+    dot.id = i;
 
     if (i === currentIndex) {
       dot.classList.add("active");
@@ -60,3 +56,9 @@ const createDots = () => {
   }
 };
 createDots();
+
+// dot.addEventListener("click", ()=>{
+//   currentIndex = i;
+//   image.setAttribute("src", pics[currentIndex]);
+// //   dot.classList.toggle("active");
+// })
