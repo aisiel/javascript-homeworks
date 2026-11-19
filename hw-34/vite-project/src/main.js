@@ -3,7 +3,7 @@ import javascriptLogo from "./assets/javascript.svg";
 import viteLogo from "./assets/vite.svg";
 import { setupCounter } from "./counter.js";
 
-const productsGrid = document.querySelector("#prod");
+const productsGrid = document.querySelector("#products");
 
 const load = async () => {
   try {
